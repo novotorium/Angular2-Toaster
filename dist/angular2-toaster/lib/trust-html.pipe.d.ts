@@ -8,4 +8,3 @@ export declare class TrustHtmlPipe implements PipeTransform {
     static ɵfac: i0.ɵɵFactoryDeclaration<TrustHtmlPipe, never>;
     static ɵpipe: i0.ɵɵPipeDeclaration<TrustHtmlPipe, "trustHtml">;
 }
-//# sourceMappingURL=trust-html.pipe.d.ts.map

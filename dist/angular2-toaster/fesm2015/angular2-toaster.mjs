@@ -185,13 +185,11 @@ class ToasterConfig {
         this.toastContainerId = configOverrides.toastContainerId != null ? configOverrides.toastContainerId : null;
     }
 }
-ToasterConfig.ɵfac = function ToasterConfig_Factory(t) { i0.ɵɵinvalidFactory(); };
-ToasterConfig.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: ToasterConfig, factory: ToasterConfig.ɵfac });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ToasterConfig, [{
+ToasterConfig.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig, deps: "invalid", target: i0.ɵɵFactoryTarget.Injectable });
+ToasterConfig.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig, decorators: [{
             type: Injectable
-        }], function () { return [{ type: undefined }]; }, null);
-})();
+        }], ctorParameters: function () { return [{ type: undefined }]; } });
 
 // http://stackoverflow.com/questions/26501688/a-typescript-guid-class
 class Guid {
@@ -262,14 +260,12 @@ class ToasterService {
         this._clearToasts.next(clearWrapper);
     }
 }
-ToasterService.ɵfac = function ToasterService_Factory(t) { return new (t || ToasterService)(); };
-ToasterService.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: ToasterService, factory: ToasterService.ɵfac, providedIn: 'root' });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ToasterService, [{
+ToasterService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+ToasterService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, decorators: [{
             type: Injectable,
             args: [{ providedIn: 'root' }]
-        }], function () { return []; }, null);
-})();
+        }], ctorParameters: function () { return []; } });
 
 class TrustHtmlPipe {
     constructor(sanitizer) {
@@ -279,72 +275,16 @@ class TrustHtmlPipe {
         return this.sanitizer.bypassSecurityTrustHtml(content);
     }
 }
-TrustHtmlPipe.ɵfac = function TrustHtmlPipe_Factory(t) { return new (t || TrustHtmlPipe)(i0.ɵɵdirectiveInject(i1.DomSanitizer, 16)); };
-TrustHtmlPipe.ɵpipe = /*@__PURE__*/ i0.ɵɵdefinePipe({ name: "trustHtml", type: TrustHtmlPipe, pure: true });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(TrustHtmlPipe, [{
+TrustHtmlPipe.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, deps: [{ token: i1.DomSanitizer }], target: i0.ɵɵFactoryTarget.Pipe });
+TrustHtmlPipe.ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, name: "trustHtml" });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, decorators: [{
             type: Pipe,
             args: [{
                     name: 'trustHtml',
                     pure: true
                 }]
-        }], function () { return [{ type: i1.DomSanitizer }]; }, null);
-})();
+        }], ctorParameters: function () { return [{ type: i1.DomSanitizer }]; } });
 
-const _c0$1 = ["componentBody"];
-const _c1$1 = ["toastComp", ""];
-function ToastComponent_div_4_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelement(0, "div", null, 7);
-    }
-}
-function ToastComponent_div_5_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelement(0, "div", 8);
-        i0.ɵɵpipe(1, "trustHtml");
-    }
-    if (rf & 2) {
-        const ctx_r1 = i0.ɵɵnextContext();
-        i0.ɵɵproperty("innerHTML", i0.ɵɵpipeBind1(1, 1, ctx_r1.toast.body), i0.ɵɵsanitizeHtml);
-    }
-}
-function ToastComponent_div_6_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "div");
-        i0.ɵɵtext(1);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r2 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(ctx_r2.toast.body);
-    }
-}
-function ToastComponent_button_7_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r7 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "button", 9);
-        i0.ɵɵlistener("click", function ToastComponent_button_7_Template_button_click_0_listener($event) { i0.ɵɵrestoreView(_r7); const ctx_r6 = i0.ɵɵnextContext(); return ctx_r6.click($event, ctx_r6.toast); });
-        i0.ɵɵpipe(1, "trustHtml");
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r3 = i0.ɵɵnextContext();
-        i0.ɵɵproperty("innerHTML", i0.ɵɵpipeBind1(1, 1, ctx_r3.toast.closeHtml), i0.ɵɵsanitizeHtml);
-    }
-}
-function ToastComponent_div_8_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "div");
-        i0.ɵɵelement(1, "div", 10);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r4 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(1);
-        i0.ɵɵstyleProp("width", ctx_r4.progressBarWidth + "%");
-    }
-}
 class ToastComponent {
     constructor(componentFactoryResolver, changeDetectorRef, ngZone, element, renderer2) {
         this.componentFactoryResolver = componentFactoryResolver;
@@ -463,53 +403,23 @@ class ToastComponent {
         this.removeToastEvent.emit(this.toast);
     }
 }
-ToastComponent.ɵfac = function ToastComponent_Factory(t) { return new (t || ToastComponent)(i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.NgZone), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
-ToastComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: ToastComponent, selectors: [["", "toastComp", ""]], viewQuery: function ToastComponent_Query(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵviewQuery(_c0$1, 5, ViewContainerRef);
-        }
-        if (rf & 2) {
-            let _t;
-            i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.componentBody = _t.first);
-        }
-    }, hostBindings: function ToastComponent_HostBindings(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵlistener("mouseleave", function ToastComponent_mouseleave_HostBindingHandler() { return ctx.restartTimer(); });
-        }
-    }, inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, attrs: _c1$1, decls: 9, vars: 9, consts: [[1, "toast-content"], [3, "ngClass"], [3, "ngClass", "ngSwitch"], [4, "ngSwitchCase"], [3, "innerHTML", 4, "ngSwitchCase"], ["class", "toast-close-button", 3, "innerHTML", "click", 4, "ngIf"], [4, "ngIf"], ["componentBody", ""], [3, "innerHTML"], [1, "toast-close-button", 3, "innerHTML", "click"], [1, "toast-progress-bar"]], template: function ToastComponent_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 0)(1, "div", 1);
-            i0.ɵɵtext(2);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(3, "div", 2);
-            i0.ɵɵtemplate(4, ToastComponent_div_4_Template, 2, 0, "div", 3);
-            i0.ɵɵtemplate(5, ToastComponent_div_5_Template, 2, 3, "div", 4);
-            i0.ɵɵtemplate(6, ToastComponent_div_6_Template, 2, 1, "div", 3);
-            i0.ɵɵelementEnd()();
-            i0.ɵɵtemplate(7, ToastComponent_button_7_Template, 2, 3, "button", 5);
-            i0.ɵɵtemplate(8, ToastComponent_div_8_Template, 2, 2, "div", 6);
-        }
-        if (rf & 2) {
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngClass", ctx.titleClass);
-            i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate(ctx.toast.title);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngClass", ctx.messageClass)("ngSwitch", ctx.toast.bodyOutputType);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", ctx.bodyOutputType.Component);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", ctx.bodyOutputType.TrustedHtml);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", ctx.bodyOutputType.Default);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx.toast.showCloseButton);
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngIf", ctx.toast.progressBar);
-        }
-    }, directives: [i1$1.NgClass, i1$1.NgSwitch, i1$1.NgSwitchCase, i1$1.NgIf], pipes: [TrustHtmlPipe], encapsulation: 2 });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ToastComponent, [{
+ToastComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, deps: [{ token: i0.ComponentFactoryResolver }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component });
+ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: ToastComponent, selector: "[toastComp]", inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, host: { listeners: { "mouseleave": "restartTimer()" } }, viewQueries: [{ propertyName: "componentBody", first: true, predicate: ["componentBody"], descendants: true, read: ViewContainerRef }], ngImport: i0, template: `
+        <div class="toast-content">
+            <div [ngClass]="titleClass">{{toast.title}}</div>
+            <div [ngClass]="messageClass" [ngSwitch]="toast.bodyOutputType">
+                <div *ngSwitchCase="bodyOutputType.Component" #componentBody></div>
+                <div *ngSwitchCase="bodyOutputType.TrustedHtml" [innerHTML]="toast.body | trustHtml"></div>
+                <div *ngSwitchCase="bodyOutputType.Default">{{toast.body}}</div>
+            </div>
+        </div>
+        <button class="toast-close-button" *ngIf="toast.showCloseButton" (click)="click($event, toast)"
+            [innerHTML]="toast.closeHtml | trustHtml">
+        </button>
+        <div *ngIf="toast.progressBar">
+            <div class="toast-progress-bar" [style.width]="progressBarWidth + '%'"></div>
+        </div>`, isInline: true, directives: [{ type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i1$1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { type: i1$1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { type: i1$1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }], pipes: { "trustHtml": TrustHtmlPipe } });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, decorators: [{
             type: Component,
             args: [{
                     selector: '[toastComp]',
@@ -529,7 +439,7 @@ ToastComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: ToastCompone
             <div class="toast-progress-bar" [style.width]="progressBarWidth + '%'"></div>
         </div>`
                 }]
-        }], function () { return [{ type: i0.ComponentFactoryResolver }, { type: i0.ChangeDetectorRef }, { type: i0.NgZone }, { type: i0.ElementRef }, { type: i0.Renderer2 }]; }, { toasterconfig: [{
+        }], ctorParameters: function () { return [{ type: i0.ComponentFactoryResolver }, { type: i0.ChangeDetectorRef }, { type: i0.NgZone }, { type: i0.ElementRef }, { type: i0.Renderer2 }]; }, propDecorators: { toasterconfig: [{
                 type: Input
             }], toast: [{
                 type: Input
@@ -547,24 +457,8 @@ ToastComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: ToastCompone
             }], restartTimer: [{
                 type: HostListener,
                 args: ['mouseleave']
-            }] });
-})();
+            }] } });
 
-const _c0 = function (a0, a1) { return [a0, a1]; };
-function ToasterContainerComponent_div_1_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r3 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 2);
-        i0.ɵɵlistener("click", function ToasterContainerComponent_div_1_Template_div_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r3); const toast_r1 = restoredCtx.$implicit; const ctx_r2 = i0.ɵɵnextContext(); return ctx_r2.click(toast_r1); })("clickEvent", function ToasterContainerComponent_div_1_Template_div_clickEvent_0_listener($event) { i0.ɵɵrestoreView(_r3); const ctx_r4 = i0.ɵɵnextContext(); return ctx_r4.childClick($event); })("removeToastEvent", function ToasterContainerComponent_div_1_Template_div_removeToastEvent_0_listener($event) { i0.ɵɵrestoreView(_r3); const ctx_r5 = i0.ɵɵnextContext(); return ctx_r5.removeToast($event); });
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const toast_r1 = ctx.$implicit;
-        const ctx_r0 = i0.ɵɵnextContext();
-        i0.ɵɵproperty("toast", toast_r1)("toasterconfig", ctx_r0.toasterconfig)("@toastState", ctx_r0.toasterconfig.animation)("titleClass", ctx_r0.toasterconfig.titleClass)("messageClass", ctx_r0.toasterconfig.messageClass)("ngClass", i0.ɵɵpureFunction2(6, _c0, ctx_r0.toasterconfig.iconClasses[toast_r1.type], ctx_r0.toasterconfig.typeClasses[toast_r1.type]));
-    }
-}
-const _c1 = function (a0) { return [a0]; };
 class ToasterContainerComponent {
     constructor(toasterService) {
         this.toasts = [];
@@ -698,21 +592,25 @@ class ToasterContainerComponent {
         }
     }
 }
-ToasterContainerComponent.ɵfac = function ToasterContainerComponent_Factory(t) { return new (t || ToasterContainerComponent)(i0.ɵɵdirectiveInject(ToasterService)); };
-ToasterContainerComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: ToasterContainerComponent, selectors: [["toaster-container"]], inputs: { toasterconfig: "toasterconfig" }, decls: 2, vars: 4, consts: [[1, "toast-container", 3, "ngClass"], ["toastComp", "", "class", "toast", 3, "toast", "toasterconfig", "titleClass", "messageClass", "ngClass", "click", "clickEvent", "removeToastEvent", 4, "ngFor", "ngForOf"], ["toastComp", "", 1, "toast", 3, "toast", "toasterconfig", "titleClass", "messageClass", "ngClass", "click", "clickEvent", "removeToastEvent"]], template: function ToasterContainerComponent_Template(rf, ctx) {
-        if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵtemplate(1, ToasterContainerComponent_div_1_Template, 1, 9, "div", 1);
-            i0.ɵɵelementEnd();
-        }
-        if (rf & 2) {
-            i0.ɵɵproperty("ngClass", i0.ɵɵpureFunction1(2, _c1, ctx.toasterconfig.positionClass));
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngForOf", ctx.toasts);
-        }
-    }, directives: [i1$1.NgClass, i1$1.NgForOf, ToastComponent], encapsulation: 2, data: { animation: Transitions } });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ToasterContainerComponent, [{
+ToasterContainerComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterContainerComponent, deps: [{ token: ToasterService }], target: i0.ɵɵFactoryTarget.Component });
+ToasterContainerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: ToasterContainerComponent, selector: "toaster-container", inputs: { toasterconfig: "toasterconfig" }, ngImport: i0, template: `
+        <div class="toast-container" [ngClass]="[toasterconfig.positionClass]">
+            <div toastComp *ngFor="let toast of toasts" class="toast" [toast]="toast"
+                [toasterconfig]="toasterconfig"
+                [@toastState]="toasterconfig.animation"
+                [titleClass]="toasterconfig.titleClass"
+                [messageClass]="toasterconfig.messageClass"
+                [ngClass]="[
+                    toasterconfig.iconClasses[toast.type],
+                    toasterconfig.typeClasses[toast.type]
+                ]"
+                (click)="click(toast)" (clickEvent)="childClick($event)"
+                (removeToastEvent)="removeToast($event)"
+            >
+            </div>
+        </div>
+        `, isInline: true, components: [{ type: ToastComponent, selector: "[toastComp]", inputs: ["toasterconfig", "toast", "titleClass", "messageClass"], outputs: ["clickEvent", "removeToastEvent"] }], directives: [{ type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i1$1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }], animations: Transitions });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterContainerComponent, decorators: [{
             type: Component,
             args: [{
                     selector: 'toaster-container',
@@ -735,10 +633,9 @@ ToasterContainerComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: T
         `,
                     animations: Transitions
                 }]
-        }], function () { return [{ type: ToasterService }]; }, { toasterconfig: [{
+        }], ctorParameters: function () { return [{ type: ToasterService }]; }, propDecorators: { toasterconfig: [{
                 type: Input
-            }] });
-})();
+            }] } });
 
 class ToasterModule {
     static forRoot() {
@@ -754,11 +651,13 @@ class ToasterModule {
         };
     }
 }
-ToasterModule.ɵfac = function ToasterModule_Factory(t) { return new (t || ToasterModule)(); };
-ToasterModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: ToasterModule });
-ToasterModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [[CommonModule]] });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ToasterModule, [{
+ToasterModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ToasterModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, declarations: [ToastComponent,
+        ToasterContainerComponent,
+        TrustHtmlPipe], imports: [CommonModule], exports: [ToasterContainerComponent,
+        ToastComponent] });
+ToasterModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, imports: [[CommonModule]] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [CommonModule],
@@ -772,14 +671,7 @@ ToasterModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [[CommonMod
                         ToastComponent
                     ]
                 }]
-        }], null, null);
-})();
-(function () {
-    (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(ToasterModule, { declarations: [ToastComponent,
-            ToasterContainerComponent,
-            TrustHtmlPipe], imports: [CommonModule], exports: [ToasterContainerComponent,
-            ToastComponent] });
-})();
+        }] });
 
 /*
  * Public API Surface of angular2-toaster

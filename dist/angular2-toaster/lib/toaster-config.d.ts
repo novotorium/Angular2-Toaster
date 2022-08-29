@@ -66,4 +66,3 @@ export declare class ToasterConfig implements IToasterConfig {
     static ɵfac: i0.ɵɵFactoryDeclaration<ToasterConfig, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<ToasterConfig>;
 }
-//# sourceMappingURL=toaster-config.d.ts.map

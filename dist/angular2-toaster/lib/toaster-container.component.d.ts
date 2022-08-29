@@ -26,4 +26,3 @@ export declare class ToasterContainerComponent implements OnInit, OnDestroy {
     static ɵfac: i0.ɵɵFactoryDeclaration<ToasterContainerComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<ToasterContainerComponent, "toaster-container", never, { "toasterconfig": "toasterconfig"; }, {}, never, never>;
 }
-//# sourceMappingURL=toaster-container.component.d.ts.map

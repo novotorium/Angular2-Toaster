@@ -11,4 +11,3 @@ export declare class ToasterModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<ToasterModule, [typeof i1.ToastComponent, typeof i2.ToasterContainerComponent, typeof i3.TrustHtmlPipe], [typeof i4.CommonModule], [typeof i2.ToasterContainerComponent, typeof i1.ToastComponent]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<ToasterModule>;
 }
-//# sourceMappingURL=toaster.module.d.ts.map
