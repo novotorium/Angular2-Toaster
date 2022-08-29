@@ -1,0 +1,58 @@
+{
+  "name": "angular2-toaster",
+  "description": "An Angular Toaster Notification library based on AngularJS-Toaster",
+  "version": "11.0.1",
+  "author": "Stabzs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stabzs/Angular2-Toaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stabzs/Angular2-Toaster/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular10",
+    "angular11",
+    "angularjs-toaster",
+    "angular-toaster",
+    "angular2-toaster",
+    "toast",
+    "toaster",
+    "notification",
+    "growl"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^11.0.0",
+    "@angular/compiler": "^11.0.0",
+    "@angular/core": "^11.0.0",
+    "rxjs": "^6.5.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2015/angular2-toaster.mjs",
+  "es2020": "fesm2020/angular2-toaster.mjs",
+  "esm2020": "esm2020/angular2-toaster.mjs",
+  "fesm2020": "fesm2020/angular2-toaster.mjs",
+  "fesm2015": "fesm2015/angular2-toaster.mjs",
+  "typings": "angular2-toaster.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./angular2-toaster.d.ts",
+      "esm2020": "./esm2020/angular2-toaster.mjs",
+      "es2020": "./fesm2020/angular2-toaster.mjs",
+      "es2015": "./fesm2015/angular2-toaster.mjs",
+      "node": "./fesm2015/angular2-toaster.mjs",
+      "default": "./fesm2020/angular2-toaster.mjs"
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}

@@ -1,8 +1,9 @@
+.angular
 node_modules
 src/node_modules
 npm-debug.log
 coverage
-dist
+# dist
 build
 typings
 src/*.js
