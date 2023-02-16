@@ -6,5 +6,5 @@ export declare class TrustHtmlPipe implements PipeTransform {
     constructor(sanitizer: DomSanitizer);
     transform(content: any): SafeHtml;
     static ɵfac: i0.ɵɵFactoryDeclaration<TrustHtmlPipe, never>;
-    static ɵpipe: i0.ɵɵPipeDeclaration<TrustHtmlPipe, "trustHtml">;
+    static ɵpipe: i0.ɵɵPipeDeclaration<TrustHtmlPipe, "trustHtml", false>;
 }

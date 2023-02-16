@@ -35,5 +35,5 @@ export declare class ToastComponent implements OnInit, AfterViewInit, OnDestroy 
     private clearTimers;
     private removeToast;
     static ɵfac: i0.ɵɵFactoryDeclaration<ToastComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ToastComponent, "[toastComp]", never, { "toasterconfig": "toasterconfig"; "toast": "toast"; "titleClass": "titleClass"; "messageClass": "messageClass"; }, { "clickEvent": "clickEvent"; "removeToastEvent": "removeToastEvent"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ToastComponent, "[toastComp]", never, { "toasterconfig": "toasterconfig"; "toast": "toast"; "titleClass": "titleClass"; "messageClass": "messageClass"; }, { "clickEvent": "clickEvent"; "removeToastEvent": "removeToastEvent"; }, never, never, false>;
 }

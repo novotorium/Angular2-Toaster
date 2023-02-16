@@ -1,7 +1,7 @@
 {
   "name": "angular2-toaster",
   "description": "An Angular Toaster Notification library based on AngularJS-Toaster",
-  "version": "11.0.1",
+  "version": "14.0.1",
   "author": "Stabzs",
   "license": "MIT",
   "repository": {
@@ -15,7 +15,7 @@
     "angular",
     "angular10",
     "angular11",
-    "angular13",
+    "angular14",
     "angularjs-toaster",
     "angular-toaster",
     "angular2-toaster",
@@ -25,9 +25,9 @@
     "growl"
   ],
   "peerDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/compiler": "^13.0.0",
-    "@angular/core": "^13.0.0",
+    "@angular/common": "^14.0.0",
+    "@angular/compiler": "^14.0.0",
+    "@angular/core": "^14.0.0",
     "rxjs": "^6.5.3 || ^7.5.0"
   },
   "dependencies": {

@@ -24,5 +24,5 @@ export declare class ToasterContainerComponent implements OnInit, OnDestroy {
     private isNullOrUndefined;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<ToasterContainerComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ToasterContainerComponent, "toaster-container", never, { "toasterconfig": "toasterconfig"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ToasterContainerComponent, "toaster-container", never, { "toasterconfig": "toasterconfig"; }, {}, never, never, false>;
 }

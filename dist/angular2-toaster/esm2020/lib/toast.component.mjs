@@ -121,8 +121,8 @@ export class ToastComponent {
         this.removeToastEvent.emit(this.toast);
     }
 }
-ToastComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, deps: [{ token: i0.ComponentFactoryResolver }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component });
-ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: ToastComponent, selector: "[toastComp]", inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, host: { listeners: { "mouseleave": "restartTimer()" } }, viewQueries: [{ propertyName: "componentBody", first: true, predicate: ["componentBody"], descendants: true, read: ViewContainerRef }], ngImport: i0, template: `
+ToastComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToastComponent, deps: [{ token: i0.ComponentFactoryResolver }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component });
+ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.12", type: ToastComponent, selector: "[toastComp]", inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, host: { listeners: { "mouseleave": "restartTimer()" } }, viewQueries: [{ propertyName: "componentBody", first: true, predicate: ["componentBody"], descendants: true, read: ViewContainerRef }], ngImport: i0, template: `
         <div class="toast-content">
             <div [ngClass]="titleClass">{{toast.title}}</div>
             <div [ngClass]="messageClass" [ngSwitch]="toast.bodyOutputType">
@@ -136,8 +136,8 @@ ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version
         </button>
         <div *ngIf="toast.progressBar">
             <div class="toast-progress-bar" [style.width]="progressBarWidth + '%'"></div>
-        </div>`, isInline: true, directives: [{ type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { type: i1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }], pipes: { "trustHtml": i2.TrustHtmlPipe } });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, decorators: [{
+        </div>`, isInline: true, dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { kind: "directive", type: i1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { kind: "pipe", type: i2.TrustHtmlPipe, name: "trustHtml" }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToastComponent, decorators: [{
             type: Component,
             args: [{
                     selector: '[toastComp]',

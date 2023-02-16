@@ -185,9 +185,9 @@ class ToasterConfig {
         this.toastContainerId = configOverrides.toastContainerId != null ? configOverrides.toastContainerId : null;
     }
 }
-ToasterConfig.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig, deps: "invalid", target: i0.ɵɵFactoryTarget.Injectable });
-ToasterConfig.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterConfig, decorators: [{
+ToasterConfig.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterConfig, deps: "invalid", target: i0.ɵɵFactoryTarget.Injectable });
+ToasterConfig.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterConfig });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterConfig, decorators: [{
             type: Injectable
         }], ctorParameters: function () { return [{ type: undefined }]; } });
 
@@ -260,9 +260,9 @@ class ToasterService {
         this._clearToasts.next(clearWrapper);
     }
 }
-ToasterService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-ToasterService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, providedIn: 'root' });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterService, decorators: [{
+ToasterService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+ToasterService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterService, decorators: [{
             type: Injectable,
             args: [{ providedIn: 'root' }]
         }], ctorParameters: function () { return []; } });
@@ -275,9 +275,9 @@ class TrustHtmlPipe {
         return this.sanitizer.bypassSecurityTrustHtml(content);
     }
 }
-TrustHtmlPipe.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, deps: [{ token: i1.DomSanitizer }], target: i0.ɵɵFactoryTarget.Pipe });
-TrustHtmlPipe.ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, name: "trustHtml" });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TrustHtmlPipe, decorators: [{
+TrustHtmlPipe.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: TrustHtmlPipe, deps: [{ token: i1.DomSanitizer }], target: i0.ɵɵFactoryTarget.Pipe });
+TrustHtmlPipe.ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "14.2.12", ngImport: i0, type: TrustHtmlPipe, name: "trustHtml" });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: TrustHtmlPipe, decorators: [{
             type: Pipe,
             args: [{
                     name: 'trustHtml',
@@ -403,8 +403,8 @@ class ToastComponent {
         this.removeToastEvent.emit(this.toast);
     }
 }
-ToastComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, deps: [{ token: i0.ComponentFactoryResolver }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component });
-ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: ToastComponent, selector: "[toastComp]", inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, host: { listeners: { "mouseleave": "restartTimer()" } }, viewQueries: [{ propertyName: "componentBody", first: true, predicate: ["componentBody"], descendants: true, read: ViewContainerRef }], ngImport: i0, template: `
+ToastComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToastComponent, deps: [{ token: i0.ComponentFactoryResolver }, { token: i0.ChangeDetectorRef }, { token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component });
+ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.12", type: ToastComponent, selector: "[toastComp]", inputs: { toasterconfig: "toasterconfig", toast: "toast", titleClass: "titleClass", messageClass: "messageClass" }, outputs: { clickEvent: "clickEvent", removeToastEvent: "removeToastEvent" }, host: { listeners: { "mouseleave": "restartTimer()" } }, viewQueries: [{ propertyName: "componentBody", first: true, predicate: ["componentBody"], descendants: true, read: ViewContainerRef }], ngImport: i0, template: `
         <div class="toast-content">
             <div [ngClass]="titleClass">{{toast.title}}</div>
             <div [ngClass]="messageClass" [ngSwitch]="toast.bodyOutputType">
@@ -418,8 +418,8 @@ ToastComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version
         </button>
         <div *ngIf="toast.progressBar">
             <div class="toast-progress-bar" [style.width]="progressBarWidth + '%'"></div>
-        </div>`, isInline: true, directives: [{ type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i1$1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { type: i1$1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { type: i1$1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }], pipes: { "trustHtml": TrustHtmlPipe } });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToastComponent, decorators: [{
+        </div>`, isInline: true, dependencies: [{ kind: "directive", type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1$1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1$1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { kind: "directive", type: i1$1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { kind: "pipe", type: TrustHtmlPipe, name: "trustHtml" }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToastComponent, decorators: [{
             type: Component,
             args: [{
                     selector: '[toastComp]',
@@ -592,8 +592,8 @@ class ToasterContainerComponent {
         }
     }
 }
-ToasterContainerComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterContainerComponent, deps: [{ token: ToasterService }], target: i0.ɵɵFactoryTarget.Component });
-ToasterContainerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: ToasterContainerComponent, selector: "toaster-container", inputs: { toasterconfig: "toasterconfig" }, ngImport: i0, template: `
+ToasterContainerComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterContainerComponent, deps: [{ token: ToasterService }], target: i0.ɵɵFactoryTarget.Component });
+ToasterContainerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.12", type: ToasterContainerComponent, selector: "toaster-container", inputs: { toasterconfig: "toasterconfig" }, ngImport: i0, template: `
         <div class="toast-container" [ngClass]="[toasterconfig.positionClass]">
             <div toastComp *ngFor="let toast of toasts" class="toast" [toast]="toast"
                 [toasterconfig]="toasterconfig"
@@ -609,8 +609,8 @@ ToasterContainerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.
             >
             </div>
         </div>
-        `, isInline: true, components: [{ type: ToastComponent, selector: "[toastComp]", inputs: ["toasterconfig", "toast", "titleClass", "messageClass"], outputs: ["clickEvent", "removeToastEvent"] }], directives: [{ type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i1$1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }], animations: Transitions });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterContainerComponent, decorators: [{
+        `, isInline: true, dependencies: [{ kind: "directive", type: i1$1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1$1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "component", type: ToastComponent, selector: "[toastComp]", inputs: ["toasterconfig", "toast", "titleClass", "messageClass"], outputs: ["clickEvent", "removeToastEvent"] }], animations: Transitions });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterContainerComponent, decorators: [{
             type: Component,
             args: [{
                     selector: 'toaster-container',
@@ -651,13 +651,13 @@ class ToasterModule {
         };
     }
 }
-ToasterModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-ToasterModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, declarations: [ToastComponent,
+ToasterModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ToasterModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.2.12", ngImport: i0, type: ToasterModule, declarations: [ToastComponent,
         ToasterContainerComponent,
         TrustHtmlPipe], imports: [CommonModule], exports: [ToasterContainerComponent,
         ToastComponent] });
-ToasterModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, imports: [[CommonModule]] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: ToasterModule, decorators: [{
+ToasterModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.12", ngImport: i0, type: ToasterModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [CommonModule],
