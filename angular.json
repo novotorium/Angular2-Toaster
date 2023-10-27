@@ -152,6 +152,6 @@
           "defaultConfiguration": "development"
         }
       }
-    }},
-  "defaultProject": "angular2-toaster"
+    }
+  }
 }
