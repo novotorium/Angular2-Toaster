@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build-prod": "ng build --configuration production && npm run sass && npm run uglifycss && npm run copy",
     "sass": "sass src/angular2-toaster/src/lib/toaster.scss src/angular2-toaster/src/lib/toaster.css",
-    "uglifycss": "node_modules/.bin/uglifycss src/angular2-toaster/src/lib/toaster.css > src/angular2-toaster/src/lib/toaster.min.css",
+    "uglifycss": "uglifycss src/angular2-toaster/src/lib/toaster.css > src/angular2-toaster/src/lib/toaster.min.css",
     "copy": "cpx LICENSE dist/angular2-toaster && cpx README.md dist/angular2-toaster && npm run copystyles",
     "copystyles": "cpx \"src/angular2-toaster/src/lib/*.{css,css.map,min.css,scss}\" dist/angular2-toaster"
   },
