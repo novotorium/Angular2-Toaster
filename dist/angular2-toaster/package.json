@@ -32,5 +32,12 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "main": "bundles/angular2-toaster.umd.js",
+  "module": "fesm2015/angular2-toaster.js",
+  "es2015": "fesm2015/angular2-toaster.js",
+  "esm2015": "esm2015/angular2-toaster.js",
+  "fesm2015": "fesm2015/angular2-toaster.js",
+  "typings": "angular2-toaster.d.ts",
+  "metadata": "angular2-toaster.metadata.json"
 }
